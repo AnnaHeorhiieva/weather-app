@@ -32,13 +32,15 @@ function CityWeatherDetailsPage(): JSX.Element {
   useEffect(() => {
     dispatch(getCurrentCityWeather(cityName));
     dispatch(getHourlyCityWeather(cityCoordinates));
-  }, [cityCoordinates, cityName, dispatch]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cityName, cityCoordinates]);
 
   useEffect(
     () => () => {
       if (mounted() === false) dispatch(resetHourlyCityWeather());
     },
-    [mounted, dispatch]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [mounted]
   );
 
   return (
