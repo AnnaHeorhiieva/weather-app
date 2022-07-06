@@ -62,8 +62,10 @@ const currentWeatherSlice = createSlice({
       state.citiesDisplayedWeather[cityName] = cityWeatherObj;
       localStorage.setItem("currentWeather", JSON.stringify(state));
     });
-    builder.addCase(getCurrentCityWeather.rejected, (state) => {
-      state.isRequestedCityExists = false;
+    builder.addCase(getCurrentCityWeather.rejected, (state, action: any) => {
+      const { cod } = action.payload;
+      if (cod === 429) state.isRequestedCityExists = true;
+      else state.isRequestedCityExists = false;
       localStorage.setItem("currentWeather", JSON.stringify(state));
     });
   },
