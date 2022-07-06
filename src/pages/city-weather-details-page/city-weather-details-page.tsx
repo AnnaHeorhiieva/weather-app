@@ -33,14 +33,14 @@ function CityWeatherDetailsPage(): JSX.Element {
     dispatch(getCurrentCityWeather(cityName));
     dispatch(getHourlyCityWeather(cityCoordinates));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [cityName, dispatch]);
 
   useEffect(
     () => () => {
       if (mounted() === false) dispatch(resetHourlyCityWeather());
     },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [mounted]
+
+    [mounted, dispatch]
   );
 
   return (
