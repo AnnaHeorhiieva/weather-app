@@ -1,0 +1,37 @@
+export const transformedWeatherObjFakeData = {
+  base: "stations",
+  clouds: { all: "12 %" },
+  cod: 200,
+  coord: { lon: 10.7461, lat: 59.9127 },
+  dt: 1657016443,
+  id: 3143244,
+  main: {
+    feels_like: "18.35 °C",
+    grnd_level: "1005 hPa",
+    humidity: "49 %",
+    pressure: "1008 hPa",
+    sea_level: "1008 hPa",
+    temp: "19.1 °C",
+    temp_max: "21.48 °C",
+    temp_min: "17.19 °C",
+  },
+  name: "Oslo",
+  sys: {
+    type: 2,
+    id: 2007693,
+    country: "NO",
+    sunrise: 1656986682,
+    sunset: 1657053484,
+  },
+  timezone: 7200,
+  visibility: "10 km",
+  weather: [
+    {
+      id: 801,
+      main: "Clouds",
+      description: "few clouds",
+      icon: "02d",
+    },
+  ],
+  wind: { speed: "1.31 m/sec", deg: "234 deg", gust: "1.87 m/sec" },
+};

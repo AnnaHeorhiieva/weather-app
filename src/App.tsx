@@ -1,8 +1,14 @@
 import React from "react";
-import "App.css";
+import Routes from "routes/routes";
+
+import { AppContainer } from "app.styles";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <AppContainer>
+      <Routes />
+    </AppContainer>
+  );
 }
 
 export default App;
