@@ -5,7 +5,7 @@ export interface Coordinates {
 
 const CURRENT_BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 const HOURLY_BASE_URL = "https://api.openweathermap.org/data/2.5/onecall";
-const API_KEY = "8824656fec0760f24c1d335fd54a5242";
+const API_KEY = "0cc9b2b50cc9c87244d0f81e99dbe789";
 
 export function configureCurrentApiUrl(query: string) {
   const url = `${CURRENT_BASE_URL}?q=${query}&units=metric&appid=${API_KEY}`;
