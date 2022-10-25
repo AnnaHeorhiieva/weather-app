@@ -17,3 +17,7 @@
 5. Material UI
 6. Jest
 7. react-testing-library
+
+## Deployed App
+
+annaheorhiieva.github.io/weather-app
