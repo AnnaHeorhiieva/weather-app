@@ -1,4 +1,4 @@
-# Tasks Completed
+## Tasks Completed
 
 1. SPA shows weather for 8 predefined cities.
 2. User can add new city weather card by typing city name in search field and fetching the current weather data from OpenWeather API.
